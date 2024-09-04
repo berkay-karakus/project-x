@@ -3,7 +3,7 @@ on: push
 jobs:
   publish:
     runs-on: ubuntu-latest
-    permissions:
+    
       contents: read
       packages: write
     steps:
@@ -15,4 +15,4 @@ jobs:
       - name: Publish package
         run: mvn --batch-mode deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.JAVA_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.JAVA_TOKEN }}   
