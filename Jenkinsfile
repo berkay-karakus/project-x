@@ -15,7 +15,7 @@ pipeline {
     }
     stage('Docker Build') {
       steps {
-        sh 'docker build -t ./target/project-x-0.0.1-SNAPSHOT.jar'
+        sh 'docker build -t project-x'
       }
     }
   }
